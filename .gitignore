@@ -1,0 +1,27 @@
+# 临时与一次性产物
+temp/
+.tmp/
+*.tmp
+*.log
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node / Python 依赖（如未来引入）
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# 本地环境与凭据（禁止入库）
+.env
+.env.*
+!.env.example
+
+# 日期会话任务区（规范 §1.4：时点快照，可按需选择性入库）
+# 如需保留某次任务证据，显式 git add -f 或取消下方忽略
+# 20[0-9][0-9]-[0-9][0-9]-[0-9][0-9]-*/

@@ -1,0 +1,19 @@
+# 统一换行符：文档与脚本一律 LF，避免 Windows/Linux 平台 diff 噪声
+* text=auto eol=lf
+
+*.md   text eol=lf
+*.ps1  text eol=lf
+*.sh   text eol=lf
+*.yaml text eol=lf
+*.yml  text eol=lf
+*.json text eol=lf
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# 二进制文件不得做文本转换
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
